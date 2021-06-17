@@ -1,0 +1,39 @@
+h2[title="baslik1"]{
+    color: red;
+}
+
+p[title="paragraf1"]::first-letter{
+    color: green;
+    font-size: 80px;
+}
+ 
+a[target="_blank"]{
+    color: greenyellow;
+    text-decoration: none;
+}
+p::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+ul li {
+    padding:5px ;
+    background-color: greenyellow;
+    margin: 2px;
+    width: 120px;
+    border-radius: 20px;
+    text-align: center;
+    list-style-type: "😎";
+
+}
+ul li:first-child {
+    background-color: blue;
+}
+ul li:last-child {
+    background-color: red;
+}
+
+ul li::before {
+    content: "\2764";
+    color: cyan;
+}

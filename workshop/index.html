@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Challenge 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Clarusway Survey Form</h1>
+        <p>Thank you for taking time to help us improve the platform</p>
+      </header>
+
+      <div id="survey-form">
+        <form action="result.html" method="GET" target="_blank">
+          <table style="width: 100%">
+            <tr>
+              <td class="table-box">
+                <label for="name">Name </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="table-box"><label for="surname">Surname</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Enter your Surname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="table-box"><label for="email">E-Mail</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="user@clarusway.com"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <div class="input-box">
+            <p>Which option best describes your current role?</p>
+            <br />
+            <select name="role" id="dropdown1">
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="job">Full Time Job</option>
+              <option value="job">Part Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferno">Prefer not to stay</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <p>Would you recommend Clarusway to a friend?</p>
+            <input
+              type="radio"
+              id="first-answer"
+              name="answer"
+              value="Definitely, Yes"
+            />
+            <label for="first-answer">Definitely, Yes</label><br />
+            <input
+              type="radio"
+              id="second-answer"
+              name="answer"
+              value="maybe"
+            />
+            <label for="second-answer">Maybe</label><br />
+            <input
+              type="radio"
+              id="thirt-answer"
+              name="answer"
+              value="notsure"
+            />
+            <label for="thirt-answer">Not sure</label><br />
+            <input
+              type="radio"
+              id="fourth-answer"
+              name="answer"
+              value="Definitely, No"
+            />
+            <label for="fourth-answer">Definitely, No</label>
+          </div>
+
+          <div class="input-box">
+            <p>What is your favorite feature of Clarusway?</p>
+            <select name="favorite" id="dropdown2">
+              <option disabled selected value>Select an option</option>
+              <option value="Courses">Courses</option>
+              <option value="Projects">Projects</option>
+              <option value="Comunity">Comunity</option>
+              <option value="Mentors">Mentors</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input
+              type="checkbox"
+              id="first-check"
+              name="choise1"
+              value="Front-end Projects"
+            />
+            <label for="first-check">Front-end Projects</label><br />
+            <input
+              type="checkbox"
+              id="second-check"
+              name="choise2"
+              value="Back-end Projects"
+            />
+            <label for="second-check">Back-end Projects</label><br />
+            <input
+              type="checkbox"
+              id="thirt-check"
+              name="choise3"
+              value="Data Science"
+            />
+            <label for="thirt-check">Data Science</label><br />
+            <input
+              type="checkbox"
+              id="fourth-check"
+              name="choise4"
+              value="Additional Courses"
+            />
+            <label for="fourth-check">Additional Courses</label>
+          </div>
+
+          <div class="comment-box">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="15"
+              rows="5"
+              placeholder="Enter your comment here...Thanks for your comments...."
+              style="resize: none"
+            ></textarea>
+          </div>
+          <div id="form-submit">
+            <button type="submit" id="form-button">
+              <i class="fa-regular fa-paper-plane"></i>Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

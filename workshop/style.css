@@ -1,0 +1,22 @@
+.input-box{
+    margin-top: 10px;
+}
+.table-box{
+   margin-right: 100px;
+   
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+#form-button{
+border-radius: 5px;
+background-color: rgb(73, 190, 145);
+cursor: pointer;
+
+}
+label{
+    font-family: 'Indie Flower', cursive;
+}
+#form-button:hover{
+    background-color: red;
+}

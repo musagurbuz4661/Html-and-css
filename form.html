@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fromlar</title>
+</head>
+<body >
+    
+    <form action="result.html" method="GET">
+    
+        <div>
+            <label for="isim">isim:</label>
+            <input id="isim" type="text" name="isim" placeholder="buraya adinizi giriniz">
+            <br> <br>
+            <label for="soyad">soyad:</label>
+            <input id="soyad" type="text" name="soyad"> 
+            <br>
+        </div>
+        <div>
+            <label for="sifre">password:</label>
+            <input type="password" name="password" id="sifre">
+        </div>
+
+        <div>
+            <label for="">cinsiyet</label>
+                <br>
+                <input id="gender1" type="radio" name="gender" value="Erkek">
+                <label for="gender1">Erkek</label>
+                <br>
+                <input id="gender2" type="radio" name="gender" value="bayan">
+                <label for="gender2">Bayan</label>
+            
+        </div>
+
+        <div>
+            <label>favori hayvaninizi belirtiniz</label>
+            <br>
+                <input id="panda"  type="checkbox" name="animal_1" value="panda">
+                <label for="panda">Panda</label>
+                <input id="okuz"  type="checkbox" name="animal_2" value="okuz">
+                <label for="okuz">okuz</label>
+                <input id="balik"  type="checkbox" name="animal_3" value="balik" checked>
+                <label for="balik">balik</label>
+        </div>
+
+        <div>
+            <label for="yas">yasinizi giriniz:</label>
+            <input type="number" name="yas" id="yas" placeholder="yasinizi buraya giriniz" step="0" min="18" max="45" >
+            
+        </div>
+        <div>
+            <label for="search">Ara:</label>
+            <input type="search" name="ara" id="search" placeholder="neyi aramak istersiniz">
+        </div>
+        <div>
+            <label for="renk">Renk sec</label>
+            <input type="color" name="color" id="renk">
+        </div>
+        <div>
+            <label for="date">bir Tarih</label>
+            <input type="date" name="tarih" id="date" min="2021-05-20" value="today" > 
+        </div>
+        <div>
+            <label for="email">eMail</label>
+            <input type="email" name="mail" id="email" placeholder="email adresinizi giriniz">
+        </div>
+
+        <div>
+            <label for="dosya">dosya sec</label>
+            <input type="file" name="kullanicinin dosyasi" id="dosya">
+        </div>
+        <div>
+            <label for="telno">telephone numero</label>
+            <input type="tel" name="telefon numarasi" id="telno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="telefon numaranizi giriniz" >
+        </div>
+
+
+
+            <br> <br> <br>
+            <input type="reset" value="Reset" >
+            <input type="submit">
+            
+    </form>
+  
+</body>
+</html>
