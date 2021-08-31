@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  /*   grid-template-columns:100px 100px minmax(80px, 240px) 100px ; */
+  /* grid-template-columns: 1fr 1fr 5fr 2fr;   /* fraction ekrani 9 parcaya boluyor responsive tasarimlarda kullanilir */
+  /* grid-template-columns:repeat(6,1fr) ; */ /* herbiri 1fractionlik 6 parca ayirdi */
+  /* grid-template-columns:repeat(2,1fr) 3fr 100px ; /* ***** */
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows:  100px 100px 100px 100px;
+}
+.content {
+  background-color: aqua;
+  border: 1px solid black;
+}
+.content1 {
+  grid-column-start:1;
+  grid-column-end:4;
+  background-color: royalblue;
+}
+.content2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: red;
+}
+.content3{
+    grid-column: 1/3;
+ grid-row: 2 /4;
+}
+.content4{
+    grid-row: 2 / span3;
+}
